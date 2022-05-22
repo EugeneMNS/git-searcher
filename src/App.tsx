@@ -4,10 +4,10 @@ import './App.css';
 import {Header} from "./Header/Header";
 import {AppRootStateType} from "./redux/store";
 import {FoundPage} from "./FoundPage/FoundPage";
-import { Loader } from './Loader/Loader';
 import userPic from './assets/Union.png';
 import search from './assets/image.svg';
 import {InformationContainer} from "./InformationContainer/InformationContainer";
+import {LinearProgress} from "@mui/material";
 
 function App() {
     const user = useSelector<AppRootStateType>(state => state.user.user);
@@ -22,7 +22,7 @@ function App() {
         <div className="App">
             <Header/>
             {(appStatus === 'failed') && <InformationContainer picture={userPic} text={'User not found'}/>}
-            {(appStatus === 'loading') && <Loader/>}
+            {(appStatus === 'loading') && <LinearProgress/>}
             {(appStatus !== 'failed' && (appStatus !== 'loading')) && <>{user
                 ? <FoundPage/>
                 : <InformationContainer picture={search} text={'Start with searching a GitHub user'} style={pictureSearchStyle}/>}</>}
