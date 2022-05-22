@@ -4,7 +4,7 @@ import {RepositoryType} from "../../redux/user-reducer";
 import style from './RepositoriesList.module.css';
 import arrow from '../../assets/previous.svg';
 import disabledarrow from '../../assets/disabledarrow.svg';
-
+import { Paper } from '@mui/material';
 type ItemsProps = {
     currentItems: RepositoryType[]
 }
@@ -14,10 +14,12 @@ const Items = ({currentItems}: ItemsProps) => {
         <div>
             {currentItems &&
                 currentItems.map((item) => (
+                    <Paper>
                     <div className={style.items}>
                         <a href={item.html_url} target="_blank" rel="noreferrer">{item.name}</a>
                         <div className={style.description}>{item.description ? item.description : ''}</div>
                     </div>
+                    </Paper>
                 ))}
         </div>
     );
@@ -47,6 +49,7 @@ export function RepositoriesList({repos}: RepositoriesListType) {
 
     return (
         <div className={style.container}>
+
             <div className={style.itemsContainer}>
                 <div className={style.title}>Repositories ({repos.length})</div>
                 {(currentItems !== null) && <Items currentItems={currentItems}/>}
@@ -69,6 +72,7 @@ export function RepositoriesList({repos}: RepositoriesListType) {
                     activeClassName={style.active}
                 />
             </div>
+
         </div>
     );
 }
