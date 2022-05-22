@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/git-searcher/static/css/main.7b5f13a7.css",
+    "main.js": "/git-searcher/static/js/main.d3a7228c.js",
+    "static/js/787.008289d1.chunk.js": "/git-searcher/static/js/787.008289d1.chunk.js",
+    "static/media/Inter-Regular.ttf": "/git-searcher/static/media/Inter-Regular.2391725004ae05a27e8e.ttf",
+    "static/media/github-icon.svg": "/git-searcher/static/media/github-icon.e78ab7a85ae3e44d3e9f7e931a8d090d.svg",
+    "static/media/image.svg": "/git-searcher/static/media/image.885b47453bf92861df6f6b43eed17c4f.svg",
+    "index.html": "/git-searcher/index.html",
+    "static/media/disabledarrow.svg": "/git-searcher/static/media/disabledarrow.6dcf931db82a13575cc421b55996e6ed.svg",
+    "static/media/previous.svg": "/git-searcher/static/media/previous.fed53def9e6e077e8336815b5bae4dda.svg",
+    "main.7b5f13a7.css.map": "/git-searcher/static/css/main.7b5f13a7.css.map",
+    "main.d3a7228c.js.map": "/git-searcher/static/js/main.d3a7228c.js.map",
+    "787.008289d1.chunk.js.map": "/git-searcher/static/js/787.008289d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b5f13a7.css",
+    "static/js/main.d3a7228c.js"
+  ]
+}
