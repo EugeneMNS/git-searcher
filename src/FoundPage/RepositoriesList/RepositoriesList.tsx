@@ -63,7 +63,7 @@ export function RepositoriesList({repos}: RepositoriesListType) {
                     nextLabel={<ButtonArrow transform={{transform : 'rotate(180deg)'}}/>}
                     disabledClassName={style.disabled}
                     onPageChange={handlePageClick}
-                    pageRangeDisplayed={2}
+                    pageRangeDisplayed={3}
                     pageCount={pageCount}
                     pageClassName={style.page}
                     previousLabel={<ButtonArrow/>}

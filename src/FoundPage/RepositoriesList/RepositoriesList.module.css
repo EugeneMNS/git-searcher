@@ -99,6 +99,7 @@
     color: #808080;
     margin-left: 10px;
 }
+.page:hover{cursor: pointer}
 .active {
     background: #0064EB;
     color: white;
