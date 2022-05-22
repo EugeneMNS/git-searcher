@@ -57,13 +57,13 @@
 .pagination {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     padding: 0px;
     list-style-type:none;
     position: relative;
     width: 200px;
     height: 25px;
-    bottom: 5px;
+    bottom: 3px;
 }
 .paginationContainer{
     display: flex;
@@ -71,8 +71,7 @@
     align-items: center;
     position: relative;
     justify-content: flex-end;
-    bottom: 0px;
-    right: 0px;
+
 }
 .paginationContainer > div{
     margin-right: 10px;
@@ -80,6 +79,7 @@
     font-size: 14px;
     line-height: 21px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     color: #808080;
     min-width: 150px;
@@ -99,6 +99,7 @@
     line-height: 21px;
     color: #808080;
     margin-left: 10px;
+
 }
 .page:hover{cursor: pointer}
 .active {
